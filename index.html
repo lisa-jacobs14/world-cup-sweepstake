@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family World Cup 2026 Sweepstake</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 id="site-title">Family World Cup 2026 Sweepstake</h1>
+    <p id="site-subtitle"></p>
+    <p class="updated">Last updated: <span id="last-updated"></span></p>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-tab="fixtures">📅 Fixtures</button>
+    <button class="tab" data-tab="selections">👪 Selections</button>
+    <button class="tab" data-tab="odds">💷 Odds</button>
+    <button class="tab" data-tab="scoreboard">🏆 Scoreboard</button>
+  </nav>
+
+  <main>
+    <section id="fixtures" class="panel active"></section>
+    <section id="selections" class="panel"></section>
+    <section id="odds" class="panel"></section>
+    <section id="scoreboard" class="panel"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Update <code>data.js</code> to change odds, results and knockouts, then refresh this page.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
