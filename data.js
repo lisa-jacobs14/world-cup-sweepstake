@@ -190,7 +190,7 @@ window.SWEEPSTAKE = {
 
     // Remaining group games — correct match-ups, but UK kick-off times still
     // to confirm (shown as "TBC"). Dates are best estimates; tweak as FIFA confirms.
-    { date: "2026-06-12", ukTime: "TBC",   group: "A", home: "Korea Republic", away: "Czechia",             played: false, score: "" },
+    { date: "2026-06-12", ukTime: "TBC",   group: "A", home: "Korea Republic", away: "Czechia",             played: true, score: "2-1"},
     { date: "2026-06-13", ukTime: "TBC",   group: "D", home: "Australia",      away: "Türkiye",             played: false, score: "" },
     { date: "2026-06-20", ukTime: "TBC",   group: "E", home: "Germany",        away: "Côte d'Ivoire",       played: false, score: "" },
     { date: "2026-06-20", ukTime: "TBC",   group: "E", home: "Curaçao",        away: "Ecuador",             played: false, score: "" },
