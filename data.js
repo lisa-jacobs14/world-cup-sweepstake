@@ -128,8 +128,8 @@ window.SWEEPSTAKE = {
   fixtures: [
     // Matchday 1
     { date: "2026-06-11", ukTime: "20:00", group: "A", home: "Mexico",         away: "South Africa",        played: true, score: "2-0" },
-    { date: "2026-06-12", ukTime: "20:00", group: "B", home: "Canada",         away: "Bosnia & Herzegovina",played: false, score: "" },
-    { date: "2026-06-12", ukTime: "02:00", group: "D", home: "United States",  away: "Paraguay",            played: false, score: "" },
+    { date: "2026-06-12", ukTime: "20:00", group: "B", home: "Canada",         away: "Bosnia & Herzegovina",played: true, score: "1-1" },
+    { date: "2026-06-12", ukTime: "02:00", group: "D", home: "United States",  away: "Paraguay",            played: true, score: "4-1" },
     { date: "2026-06-13", ukTime: "20:00", group: "B", home: "Qatar",          away: "Switzerland",         played: false, score: "" },
     { date: "2026-06-14", ukTime: "18:00", group: "E", home: "Germany",        away: "Curaçao",             played: false, score: "" },
     { date: "2026-06-14", ukTime: "21:00", group: "F", home: "Netherlands",    away: "Japan",               played: false, score: "" },
