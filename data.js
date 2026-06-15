@@ -205,7 +205,7 @@ window.SWEEPSTAKE = {
     { date: "2026-06-22", ukTime: "TBC",   group: "J", home: "Argentina",      away: "Austria",             played: false, score: "" },
     { date: "2026-06-22", ukTime: "TBC",   group: "J", home: "Algeria",        away: "Jordan",              played: false, score: "" },
     { date: "2026-06-13", ukTime: "TBC",   group: "C", home: "Brazil",         away: "Morocco",             played: false, score: "" },
-    { date: "2026-06-23", ukTime: "TBC",   group: "C", home: "Scotland",       away: "Haiti",               played: false, score: "" },
+    { date: "2026-06-14", ukTime: "TBC",   group: "C", home: "Scotland",       away: "Haiti",               played: false, score: "" },
     { date: "2026-06-23", ukTime: "TBC",   group: "K", home: "Portugal",       away: "Uzbekistan",          played: false, score: "" },
     { date: "2026-06-23", ukTime: "TBC",   group: "K", home: "Colombia",       away: "DR Congo",            played: false, score: "" },
     { date: "2026-06-23", ukTime: "TBC",   group: "L", home: "Croatia",        away: "Panama",              played: false, score: "" }
