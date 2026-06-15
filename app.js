@@ -126,6 +126,74 @@
     return isNaN(f) ? 99999 : f;
   }
 
+  /* ---------- Group standings ---------- */
+  function renderStandings() {
+    const el = $("standings");
+
+    // One blank row per team, plus a lookup of which teams are in each group.
+    const groups = {};
+    const rows = {};
+    teams.forEach(t => {
+      (groups[t.group] = groups[t.group] || []).push(t.name);
+      rows[t.name] = { name: t.name, owner: t.owner, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 };
+    });
+
+    // Tally every played fixture that has a real "X-Y" score.
+    let playedCount = 0;
+    DATA.fixtures.forEach(f => {
+      if (!f.played) return;
+      const m = /^(\d+)\s*-\s*(\d+)$/.exec(String(f.score).trim());
+      if (!m) return;
+      const H = rows[f.home], A = rows[f.away];
+      if (!H || !A) return;
+      const hg = +m[1], ag = +m[2];
+      playedCount++;
+      H.p++; A.p++;
+      H.gf += hg; H.ga += ag; A.gf += ag; A.ga += hg;
+      if (hg > ag) { H.w++; A.l++; H.pts += 3; }
+      else if (hg < ag) { A.w++; H.l++; A.pts += 3; }
+      else { H.d++; A.d++; H.pts++; A.pts++; }
+    });
+
+    let html = '<h2 class="section-title">Group standings</h2>';
+    html += playedCount === 0
+      ? '<p class="note">No results entered yet. As you add scores (set <strong>played: true</strong> and e.g. <strong>score: "2-1"</strong> in data.js) these tables fill in automatically. Top two in each group qualify.</p>'
+      : '<p class="note">Calculated live from match results. The top two in each group (highlighted) qualify automatically; the best third-placed teams also progress.</p>';
+
+    Object.keys(groups).sort().forEach(g => {
+      const table = groups[g].map(n => rows[n]).sort((a, b) =>
+        b.pts - a.pts || (b.gf - b.ga) - (a.gf - a.ga) || b.gf - a.gf || a.name.localeCompare(b.name));
+
+      html += `<h3 class="day-heading">Group ${g}</h3>`;
+      html += '<table class="standings-table"><thead><tr>' +
+              '<th class="num">#</th><th>Team</th><th>Owner</th>' +
+              '<th class="num">P</th><th class="num">W</th><th class="num">D</th><th class="num">L</th>' +
+              '<th class="num">GF</th><th class="num">GA</th><th class="num">GD</th><th class="num">Pts</th>' +
+              '</tr></thead><tbody>';
+      table.forEach((r, i) => {
+        const gd = r.gf - r.ga;
+        const teamObj = teamByName[r.name];
+        const out = teamObj && teamObj.status === "out";
+        const cls = [i < 2 ? "qualify" : "", out ? "knocked" : ""].join(" ").trim();
+        html += `<tr class="${cls}">
+          <td class="num">${i + 1}</td>
+          <td>${r.name}</td>
+          <td>${r.owner}</td>
+          <td class="num">${r.p}</td>
+          <td class="num">${r.w}</td>
+          <td class="num">${r.d}</td>
+          <td class="num">${r.l}</td>
+          <td class="num">${r.gf}</td>
+          <td class="num">${r.ga}</td>
+          <td class="num">${gd > 0 ? "+" : ""}${gd}</td>
+          <td class="num"><strong>${r.pts}</strong></td>
+        </tr>`;
+      });
+      html += '</tbody></table>';
+    });
+    el.innerHTML = html;
+  }
+
   /* ---------- Scoreboard ---------- */
   function renderScoreboard() {
     const el = $("scoreboard");
@@ -171,8 +239,39 @@
     el.innerHTML = html;
   }
 
-  renderFixtures();
-  renderSelections();
-  renderOdds();
-  renderScoreboard();
+  /* ---------- Live scores (results.json, written by the GitHub Action) ----------
+     Merges auto-fetched scores onto the fixtures. Match order doesn't matter —
+     if results.json lists a game the other way round, the score is flipped.
+     If results.json is missing (e.g. opening the file locally), we silently
+     fall back to whatever is in data.js. */
+  async function mergeResults() {
+    try {
+      const res = await fetch("results.json?ts=" + Date.now(), { cache: "no-store" });
+      if (!res.ok) return;
+      const payload = await res.json();
+      const map = payload.results || {};
+      DATA.fixtures.forEach(f => {
+        let r = map[f.home + "|" + f.away], flip = false;
+        if (!r) { r = map[f.away + "|" + f.home]; flip = true; }
+        if (r && r.score) {
+          let s = r.score;
+          if (flip) { const p = s.split("-"); s = p[1] + "-" + p[0]; }
+          f.score = s;
+          f.played = true;
+        }
+      });
+      if (payload.updated) DATA.meta.lastUpdated = payload.updated + " (auto)";
+    } catch (e) { /* offline or local file:// — use data.js as-is */ }
+  }
+
+  async function boot() {
+    await mergeResults();
+    $("last-updated").textContent = DATA.meta.lastUpdated;
+    renderFixtures();
+    renderStandings();
+    renderSelections();
+    renderOdds();
+    renderScoreboard();
+  }
+  boot();
 })();

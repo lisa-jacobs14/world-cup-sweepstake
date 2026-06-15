@@ -164,6 +164,13 @@ td.num, th.num { text-align: center; }
 .status-out { color: var(--out); font-weight: 600; }
 tr.knocked td { opacity: .55; }
 
+/* ---- Group standings ---- */
+.standings-table { margin-bottom: 6px; }
+.standings-table th, .standings-table td { padding: 7px 8px; font-size: .9rem; }
+.standings-table tr.qualify td { background: #eaf6ee; }
+.standings-table tr.qualify td:first-child { box-shadow: inset 3px 0 0 var(--green); font-weight: 700; }
+.standings-table tr.qualify:hover td { background: #e0f1e6; }
+
 /* ---- Scoreboard summary ---- */
 .summary-grid {
   display: grid;

@@ -52,3 +52,29 @@ file, click the pencil ✏️ (or re-upload it), and commit. The live site refre
 within a minute.
 
 > Tip: keep a backup copy of `data.js` somewhere safe before big edits.
+
+## Automatic score updates (optional)
+
+There's a GitHub Action (`.github/workflows/update-results.yml`) that fetches
+finished match scores every hour and writes them to `results.json`. The page
+merges those scores in automatically, so Fixtures, Standings and the Scoreboard
+update themselves. It only ever writes `results.json` — it never touches
+`data.js`, so your owners, odds and void picks are safe.
+
+**One-time setup:**
+1. Get a free API key from https://www.football-data.org/client/register
+2. In your repo: **Settings → Secrets and variables → Actions → New repository
+   secret**. Name it exactly `FOOTBALL_DATA_TOKEN`, paste the key, save.
+3. Add these files to the repo: `results.json`, `scripts/update-results.mjs`,
+   `.github/workflows/update-results.yml`.
+4. Go to the **Actions** tab, pick **Update scores**, click **Run workflow** to
+   test it now (otherwise it runs hourly).
+
+If a run logs "could not map" a team name, add that spelling to the `ALIASES`
+list in `scripts/update-results.mjs`. Odds and knockout `status` stay manual.
+
+## Group standings tab
+
+The **Standings** tab builds the 12 group tables (P/W/D/L/GF/GA/GD/Pts)
+automatically from match scores — nothing extra to maintain. Top two in each
+group are highlighted as qualifiers.

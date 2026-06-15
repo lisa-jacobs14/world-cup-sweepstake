@@ -127,14 +127,14 @@ window.SWEEPSTAKE = {
      ============================================================ */
   fixtures: [
     // Matchday 1
-    { date: "2026-06-11", ukTime: "20:00", group: "A", home: "Mexico",         away: "South Africa",        played: true, score: "2-0" },
-    { date: "2026-06-12", ukTime: "20:00", group: "B", home: "Canada",         away: "Bosnia & Herzegovina",played: true, score: "1-1" },
-    { date: "2026-06-12", ukTime: "02:00", group: "D", home: "United States",  away: "Paraguay",            played: true, score: "4-1" },
-    { date: "2026-06-13", ukTime: "20:00", group: "B", home: "Qatar",          away: "Switzerland",         played: true, score: "1-1" },
-    { date: "2026-06-14", ukTime: "18:00", group: "E", home: "Germany",        away: "Curaçao",             played: true, score: "7-1" },
-    { date: "2026-06-14", ukTime: "21:00", group: "F", home: "Netherlands",    away: "Japan",               played: true, score: "2-2" },
-    { date: "2026-06-15", ukTime: "00:00", group: "E", home: "Côte d'Ivoire",  away: "Ecuador",             played: true, score: "1-0" },
-    { date: "2026-06-15", ukTime: "03:00", group: "F", home: "Sweden",         away: "Tunisia",             played: true, score: "5-1" },
+    { date: "2026-06-11", ukTime: "20:00", group: "A", home: "Mexico",         away: "South Africa",        played: false, score: "" },
+    { date: "2026-06-12", ukTime: "20:00", group: "B", home: "Canada",         away: "Bosnia & Herzegovina",played: false, score: "" },
+    { date: "2026-06-12", ukTime: "02:00", group: "D", home: "United States",  away: "Paraguay",            played: false, score: "" },
+    { date: "2026-06-13", ukTime: "20:00", group: "B", home: "Qatar",          away: "Switzerland",         played: false, score: "" },
+    { date: "2026-06-14", ukTime: "18:00", group: "E", home: "Germany",        away: "Curaçao",             played: false, score: "" },
+    { date: "2026-06-14", ukTime: "21:00", group: "F", home: "Netherlands",    away: "Japan",               played: false, score: "" },
+    { date: "2026-06-15", ukTime: "00:00", group: "E", home: "Côte d'Ivoire",  away: "Ecuador",             played: false, score: "" },
+    { date: "2026-06-15", ukTime: "03:00", group: "F", home: "Sweden",         away: "Tunisia",             played: false, score: "" },
     { date: "2026-06-15", ukTime: "18:00", group: "H", home: "Spain",          away: "Cabo Verde",          played: false, score: "" },
     { date: "2026-06-15", ukTime: "23:00", group: "G", home: "Belgium",        away: "Egypt",               played: false, score: "" },
     { date: "2026-06-15", ukTime: "23:00", group: "H", home: "Saudi Arabia",   away: "Uruguay",             played: false, score: "" },
@@ -190,8 +190,8 @@ window.SWEEPSTAKE = {
 
     // Remaining group games — correct match-ups, but UK kick-off times still
     // to confirm (shown as "TBC"). Dates are best estimates; tweak as FIFA confirms.
-    { date: "2026-06-12", ukTime: "TBC",   group: "A", home: "Korea Republic", away: "Czechia",             played: true, score: "2-1"},
-    { date: "2026-06-13", ukTime: "TBC",   group: "D", home: "Australia",      away: "Türkiye",             played: true, score: "2-0" },
+    { date: "2026-06-12", ukTime: "TBC",   group: "A", home: "Korea Republic", away: "Czechia",             played: false, score: "" },
+    { date: "2026-06-13", ukTime: "TBC",   group: "D", home: "Australia",      away: "Türkiye",             played: false, score: "" },
     { date: "2026-06-20", ukTime: "TBC",   group: "E", home: "Germany",        away: "Côte d'Ivoire",       played: false, score: "" },
     { date: "2026-06-20", ukTime: "TBC",   group: "E", home: "Curaçao",        away: "Ecuador",             played: false, score: "" },
     { date: "2026-06-21", ukTime: "TBC",   group: "F", home: "Netherlands",    away: "Sweden",              played: false, score: "" },
@@ -204,8 +204,8 @@ window.SWEEPSTAKE = {
     { date: "2026-06-22", ukTime: "TBC",   group: "I", home: "Senegal",        away: "Norway",              played: false, score: "" },
     { date: "2026-06-22", ukTime: "TBC",   group: "J", home: "Argentina",      away: "Austria",             played: false, score: "" },
     { date: "2026-06-22", ukTime: "TBC",   group: "J", home: "Algeria",        away: "Jordan",              played: false, score: "" },
-    { date: "2026-06-13", ukTime: "TBC",   group: "C", home: "Brazil",         away: "Morocco",             played: true, score: "1-1" },
-      { date: "2026-06-23", ukTime: "TBC",   group: "C", home: "Scotland",       away: "Haiti",               played: true, score: "1-0" },
+    { date: "2026-06-23", ukTime: "TBC",   group: "C", home: "Brazil",         away: "Morocco",             played: false, score: "" },
+    { date: "2026-06-23", ukTime: "TBC",   group: "C", home: "Scotland",       away: "Haiti",               played: false, score: "" },
     { date: "2026-06-23", ukTime: "TBC",   group: "K", home: "Portugal",       away: "Uzbekistan",          played: false, score: "" },
     { date: "2026-06-23", ukTime: "TBC",   group: "K", home: "Colombia",       away: "DR Congo",            played: false, score: "" },
     { date: "2026-06-23", ukTime: "TBC",   group: "L", home: "Croatia",        away: "Panama",              played: false, score: "" }
