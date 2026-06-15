@@ -102,7 +102,9 @@ window.SWEEPSTAKE = {
     { name: "England",         group: "L", owner: "Tanya",   odds: "11/2",  status: "in" },
     { name: "Croatia",         group: "L", owner: "Sam",     odds: "40/1",  status: "in" },
     { name: "Ghana",           group: "L", owner: "Zac",     odds: "150/1", status: "in" },
-    { name: "Panama",          group: "L", owner: "Tony",    odds: "250/1", status: "in" }
+    { name: "Panama",          group: "L", owner: "Tony",    odds: "250/1", status: "in" },
+     { name: "Jamaica",          group: "L", owner: "Evelyn",    odds: "2/1", status: "in" },
+     { name: "Italy",          group: "L", owner: "Lisa",    odds: "2/1", status: "in" }
   ],
 
   /* ============================================================
@@ -145,6 +147,7 @@ window.SWEEPSTAKE = {
     { date: "2026-06-17", ukTime: "02:00", group: "J", home: "Austria",        away: "Jordan",              played: false, score: "" },
     { date: "2026-06-17", ukTime: "18:00", group: "K", home: "Portugal",       away: "DR Congo",            played: false, score: "" },
     { date: "2026-06-17", ukTime: "21:00", group: "L", home: "England",        away: "Croatia",             played: false, score: "" },
+     { date: "2026-06-17", ukTime: "21:00", group: "L", home: "Jamaica",        away: "Italy",             played: false, score: "" },
     { date: "2026-06-18", ukTime: "00:00", group: "L", home: "Ghana",          away: "Panama",              played: false, score: "" },
     { date: "2026-06-18", ukTime: "03:00", group: "K", home: "Uzbekistan",     away: "Colombia",            played: false, score: "" },
 
