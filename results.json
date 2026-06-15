@@ -1,5 +1,54 @@
 {
-  "updated": "",
+  "updated": "2026-06-15",
   "source": "football-data.org",
-  "results": {}
+  "results": {
+    "Mexico|South Africa": {
+      "score": "2-0",
+      "played": true
+    },
+    "Korea Republic|Czechia": {
+      "score": "2-1",
+      "played": true
+    },
+    "Canada|Bosnia & Herzegovina": {
+      "score": "1-1",
+      "played": true
+    },
+    "United States|Paraguay": {
+      "score": "4-1",
+      "played": true
+    },
+    "Qatar|Switzerland": {
+      "score": "1-1",
+      "played": true
+    },
+    "Brazil|Morocco": {
+      "score": "1-1",
+      "played": true
+    },
+    "Haiti|Scotland": {
+      "score": "0-1",
+      "played": true
+    },
+    "Australia|Türkiye": {
+      "score": "2-0",
+      "played": true
+    },
+    "Germany|Curaçao": {
+      "score": "7-1",
+      "played": true
+    },
+    "Netherlands|Japan": {
+      "score": "2-2",
+      "played": true
+    },
+    "Côte d'Ivoire|Ecuador": {
+      "score": "1-0",
+      "played": true
+    },
+    "Sweden|Tunisia": {
+      "score": "5-1",
+      "played": true
+    }
+  }
 }
