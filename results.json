@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15",
+  "updated": "2026-06-16",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -56,6 +56,14 @@
     },
     "Belgium|Egypt": {
       "score": "1-1",
+      "played": true
+    },
+    "Saudi Arabia|Uruguay": {
+      "score": "1-1",
+      "played": true
+    },
+    "Iran|New Zealand": {
+      "score": "2-2",
       "played": true
     }
   }
