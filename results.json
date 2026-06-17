@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16",
+  "updated": "2026-06-17",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -67,6 +67,18 @@
       "played": true
     },
     "France|Senegal": {
+      "score": "3-1",
+      "played": true
+    },
+    "Iraq|Norway": {
+      "score": "1-4",
+      "played": true
+    },
+    "Argentina|Algeria": {
+      "score": "3-0",
+      "played": true
+    },
+    "Austria|Jordan": {
       "score": "3-1",
       "played": true
     }
