@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17",
+  "updated": "2026-06-18",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -84,6 +84,18 @@
     },
     "Portugal|DR Congo": {
       "score": "1-1",
+      "played": true
+    },
+    "England|Croatia": {
+      "score": "4-2",
+      "played": true
+    },
+    "Ghana|Panama": {
+      "score": "1-0",
+      "played": true
+    },
+    "Uzbekistan|Colombia": {
+      "score": "1-3",
       "played": true
     }
   }
