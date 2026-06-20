@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-19",
+  "updated": "2026-06-20",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -116,6 +116,18 @@
     },
     "United States|Australia": {
       "score": "2-0",
+      "played": true
+    },
+    "Scotland|Morocco": {
+      "score": "0-1",
+      "played": true
+    },
+    "Brazil|Haiti": {
+      "score": "3-0",
+      "played": true
+    },
+    "Türkiye|Paraguay": {
+      "score": "0-1",
       "played": true
     }
   }
