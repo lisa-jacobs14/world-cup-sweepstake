@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20",
+  "updated": "2026-06-21",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -132,6 +132,18 @@
     },
     "Netherlands|Sweden": {
       "score": "5-1",
+      "played": true
+    },
+    "Germany|Côte d'Ivoire": {
+      "score": "2-1",
+      "played": true
+    },
+    "Ecuador|Curaçao": {
+      "score": "0-0",
+      "played": true
+    },
+    "Tunisia|Japan": {
+      "score": "0-4",
       "played": true
     }
   }
