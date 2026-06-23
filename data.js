@@ -90,7 +90,7 @@ window.SWEEPSTAKE = {
     { name: "Argentina",       group: "J", owner: "Gaz",     odds: "11/2",  status: "in" },
     { name: "Algeria",         group: "J", owner: "Bindy",   odds: "150/1", status: "in" },
     { name: "Austria",         group: "J", owner: "Zac",     odds: "80/1",  status: "in" },
-    { name: "Jordan",          group: "J", owner: "Evelyn",  odds: "500/1", status: "in" },
+    { name: "Jordan",          group: "J", owner: "Evelyn",  odds: "500/1", status: "out" },
 
     // Group K
     { name: "Portugal",        group: "K", owner: "Isobel",  odds: "8/1",   status: "in" },
