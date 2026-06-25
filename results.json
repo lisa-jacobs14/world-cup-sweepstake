@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24",
+  "updated": "2026-06-25",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -200,6 +200,22 @@
     },
     "Bosnia & Herzegovina|Qatar": {
       "score": "3-1",
+      "played": true
+    },
+    "Morocco|Haiti": {
+      "score": "4-2",
+      "played": true
+    },
+    "Scotland|Brazil": {
+      "score": "0-3",
+      "played": true
+    },
+    "Czechia|Mexico": {
+      "score": "0-3",
+      "played": true
+    },
+    "South Africa|Korea Republic": {
+      "score": "1-0",
       "played": true
     }
   }
