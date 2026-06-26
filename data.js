@@ -36,12 +36,12 @@ window.SWEEPSTAKE = {
     { name: "Mexico",          group: "A", owner: "J",       odds: "50/1",  status: "in" },
     { name: "South Africa",    group: "A", owner: "Georgie", odds: "250/1", status: "in" },
     { name: "Korea Republic",  group: "A", owner: "Jake",    odds: "100/1", status: "in" },
-    { name: "Czechia",         group: "A", owner: "Grannie", odds: "150/1", status: "in" },
+    { name: "Czechia",         group: "A", owner: "Grannie", odds: "150/1", status: "out" },
 
     // Group B
     { name: "Canada",          group: "B", owner: "Rosa",    odds: "100/1", status: "in" },
     { name: "Switzerland",     group: "B", owner: "Will",    odds: "66/1",  status: "in" },
-    { name: "Qatar",           group: "B", owner: "Georgie", odds: "250/1", status: "in" },
+    { name: "Qatar",           group: "B", owner: "Georgie", odds: "250/1", status: "out" },
     { name: "Bosnia & Herzegovina", group: "B", owner: "Grandad", odds: "200/1", status: "in" },
 
     // Group C
@@ -58,7 +58,7 @@ window.SWEEPSTAKE = {
 
     // Group E
     { name: "Germany",         group: "E", owner: "Charlie", odds: "9/1",   status: "in" },
-    { name: "Curaçao",         group: "E", owner: "Isobel",  odds: "1000/1",status: "in" },
+    { name: "Curaçao",         group: "E", owner: "Isobel",  odds: "1000/1",status: "out" },
     { name: "Côte d'Ivoire",   group: "E", owner: "Lisa",    odds: "80/1",  status: "in" },
     { name: "Ecuador",         group: "E", owner: "Gaz",     odds: "66/1",  status: "in" },
 
@@ -102,7 +102,7 @@ window.SWEEPSTAKE = {
     { name: "England",         group: "L", owner: "Tanya",   odds: "11/2",  status: "in" },
     { name: "Croatia",         group: "L", owner: "Sam",     odds: "40/1",  status: "in" },
     { name: "Ghana",           group: "L", owner: "Zac",     odds: "150/1", status: "in" },
-    { name: "Panama",          group: "L", owner: "Tony",    odds: "250/1", status: "in" }
+    { name: "Panama",          group: "L", owner: "Tony",    odds: "250/1", status: "out" }
   ],
 
   /* ============================================================
