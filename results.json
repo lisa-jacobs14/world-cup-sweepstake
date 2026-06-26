@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-25",
+  "updated": "2026-06-26",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -224,6 +224,22 @@
     },
     "Curaçao|Côte d'Ivoire": {
       "score": "0-2",
+      "played": true
+    },
+    "Tunisia|Netherlands": {
+      "score": "1-3",
+      "played": true
+    },
+    "Japan|Sweden": {
+      "score": "1-1",
+      "played": true
+    },
+    "Türkiye|United States": {
+      "score": "3-2",
+      "played": true
+    },
+    "Paraguay|Australia": {
+      "score": "0-0",
       "played": true
     }
   }
