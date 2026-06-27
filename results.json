@@ -265,6 +265,14 @@
     "Egypt|Iran": {
       "score": "1-1",
       "played": true
+    },
+    "Panama|England": {
+      "score": "0-2",
+      "played": true
+    },
+    "Croatia|Ghana": {
+      "score": "2-1",
+      "played": true
     }
   }
 }
