@@ -17,6 +17,27 @@
   const teamByName = Object.fromEntries(teams.map(t => [t.name, t]));
   const ownerOf = (name) => (teamByName[name] ? teamByName[name].owner : "");
 
+  // Teams knocked out in the knockout rounds, derived live from results.json.
+  // Filled in by boot() after the feed is merged.
+  let koEliminated = new Set();
+
+  // A team is "out" if data.js says so OR it lost a knockout match.
+  const isOut = (name) => {
+    const t = teamByName[name];
+    return (t && t.status === "out") || koEliminated.has(name);
+  };
+
+  // Friendly names + ordering for the knockout rounds.
+  const STAGE_LABELS = {
+    LAST_32: "Round of 32",
+    LAST_16: "Round of 16",
+    QUARTER_FINALS: "Quarter-finals",
+    SEMI_FINALS: "Semi-finals",
+    THIRD_PLACE: "Third-place play-off",
+    FINAL: "Final"
+  };
+  const STAGE_ORDER = ["LAST_32", "LAST_16", "QUARTER_FINALS", "SEMI_FINALS", "THIRD_PLACE", "FINAL"];
+
   /* ---------- Tabs ---------- */
   document.querySelectorAll(".tab").forEach(btn => {
     btn.addEventListener("click", () => {
@@ -83,7 +104,7 @@
       const picks = people[name].sort((a, b) => a.name.localeCompare(b.name));
       const chips = picks.map(t => {
         if (t.void) return `<span class="team-chip void" title="${t.note}">${t.name} (void)</span>`;
-        const out = t.status === "out";
+        const out = isOut(t.name);
         return `<span class="team-chip ${out ? "out" : ""}">
                   <span class="dot ${out ? "out" : "in"}"></span>${t.name}
                 </span>`;
@@ -101,7 +122,7 @@
     html += '<p class="note">Tournament-winner odds, shortest first. Update the <strong>odds</strong> field in data.js as prices move.</p>';
     html += '<table><thead><tr><th>Team</th><th>Group</th><th>Owner</th><th class="num">Odds</th><th>Status</th></tr></thead><tbody>';
     sorted.forEach(t => {
-      const out = t.status === "out";
+      const out = isOut(t.name);
       html += `<tr class="${out ? "knocked" : ""}">
         <td>${t.name}</td>
         <td>${t.group}</td>
@@ -172,8 +193,7 @@
               '</tr></thead><tbody>';
       table.forEach((r, i) => {
         const gd = r.gf - r.ga;
-        const teamObj = teamByName[r.name];
-        const out = teamObj && teamObj.status === "out";
+        const out = isOut(r.name);
         const cls = [i < 2 ? "qualify" : "", out ? "knocked" : ""].join(" ").trim();
         html += `<tr class="${cls}">
           <td class="num">${i + 1}</td>
@@ -200,10 +220,10 @@
     const people = {};
     teams.forEach(t => {
       const p = people[t.owner] = people[t.owner] || { in: [], out: [] };
-      (t.status === "out" ? p.out : p.in).push(t.name);
+      (isOut(t.name) ? p.out : p.in).push(t.name);
     });
 
-    const totalOut = teams.filter(t => t.status === "out").length;
+    const totalOut = teams.filter(t => isOut(t.name)).length;
     const totalIn = teams.length - totalOut;
 
     const standings = Object.entries(people)
@@ -239,6 +259,67 @@
     el.innerHTML = html;
   }
 
+  /* ---------- Knockout bracket ----------
+     Built entirely from results.json (the hourly API feed). No data.js edits
+     needed — match-ups, scores and who went through all come from the API. */
+  function renderKnockout() {
+    const el = $("knockout");
+    const ko = DATA._knockout || [];
+    let html = '<h2 class="section-title">Knockout bracket</h2>';
+
+    if (!ko.length) {
+      html += '<p class="note">The knockout bracket appears here automatically once the group stage ends and the fixtures land in the hourly feed (results.json). ' +
+              'Opening this file straight from your computer can\'t fetch live data — view the published GitHub Pages link to see it.</p>';
+      el.innerHTML = html;
+      return;
+    }
+
+    // Champions banner once the final has a winner.
+    const final = ko.find(k => k.stage === "FINAL" && k.played && k.winner);
+    if (final) {
+      const o = ownerOf(final.winner);
+      html += `<div class="champion-banner">🏆 Champions: <strong>${final.winner}</strong>${o ? ` <span>(${o})</span>` : ""}</div>`;
+    }
+
+    html += '<p class="note">Updates automatically every hour. The team that goes through is highlighted; owners are shown beneath each team.</p>';
+
+    const byStage = {};
+    ko.forEach(k => { (byStage[k.stage] = byStage[k.stage] || []).push(k); });
+    const orderOf = (s) => (STAGE_ORDER.indexOf(s) + 1) || 99;
+    const stages = Object.keys(byStage).sort((a, b) => orderOf(a) - orderOf(b));
+
+    const teamCell = (name, side, isWinner) => {
+      const owner = name ? (ownerOf(name) || "—") : "";
+      return `<div class="team ${side} ${isWinner ? "winner" : ""}">${name || "TBD"}` +
+             `<div class="owner-tag">${owner}</div></div>`;
+    };
+
+    stages.forEach(st => {
+      const label = STAGE_LABELS[st] || st;
+      html += `<h3 class="day-heading">${label}</h3>`;
+      byStage[st].forEach(k => {
+        const hWin = k.played && k.winner && k.winner === k.home;
+        const aWin = k.played && k.winner && k.winner === k.away;
+        const mid = (k.played && k.score)
+          ? `<span class="score">${k.score}</span>${k.pens ? `<div class="pens">pens ${k.pens}</div>` : ""}`
+          : `<span class="ko">${k.date ? fmtDate(k.date) : "TBC"}</span>`;
+        html += `
+          <div class="card">
+            <div class="fixture-meta">
+              <span class="pill">${label}</span>
+              <span>${k.played ? "Full time" : (k.date ? "Scheduled" : "To be confirmed")}</span>
+            </div>
+            <div class="fixture">
+              ${teamCell(k.home, "home", hWin)}
+              <div class="mid">${mid}</div>
+              ${teamCell(k.away, "away", aWin)}
+            </div>
+          </div>`;
+      });
+    });
+    el.innerHTML = html;
+  }
+
   /* ---------- Live scores (results.json, written by the GitHub Action) ----------
      Merges auto-fetched scores onto the fixtures. Match order doesn't matter —
      if results.json lists a game the other way round, the score is flipped.
@@ -249,6 +330,7 @@
       const res = await fetch("results.json?ts=" + Date.now(), { cache: "no-store" });
       if (!res.ok) return;
       const payload = await res.json();
+      DATA._knockout = Array.isArray(payload.knockout) ? payload.knockout : [];
       const map = payload.results || {};
       DATA.fixtures.forEach(f => {
         let r = map[f.home + "|" + f.away], flip = false;
@@ -266,9 +348,20 @@
 
   async function boot() {
     await mergeResults();
+
+    // Mark knockout losers as eliminated, so the scoreboard updates itself.
+    koEliminated = new Set();
+    (DATA._knockout || []).forEach(k => {
+      if (k.played && k.winner) {
+        if (k.home && k.home !== k.winner) koEliminated.add(k.home);
+        if (k.away && k.away !== k.winner) koEliminated.add(k.away);
+      }
+    });
+
     $("last-updated").textContent = DATA.meta.lastUpdated;
     renderFixtures();
     renderStandings();
+    renderKnockout();
     renderSelections();
     renderOdds();
     renderScoreboard();
