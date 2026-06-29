@@ -293,6 +293,10 @@
     "South Africa|Canada": {
       "score": "0-1",
       "played": true
+    },
+    "Brazil|Japan": {
+      "score": "2-1",
+      "played": true
     }
   },
   "knockout": [
@@ -311,10 +315,10 @@
       "date": "2026-06-29",
       "home": "Brazil",
       "away": "Japan",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "2-1",
       "pens": "",
-      "winner": null
+      "winner": "Brazil"
     },
     {
       "stage": "LAST_32",
