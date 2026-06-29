@@ -35,7 +35,7 @@ window.SWEEPSTAKE = {
     // Group A
     { name: "Mexico",          group: "A", owner: "J",       odds: "50/1",  status: "in" },
     { name: "South Africa",    group: "A", owner: "Georgie", odds: "250/1", status: "in" },
-    { name: "Korea Republic",  group: "A", owner: "Jake",    odds: "100/1", status: "in" },
+    { name: "Korea Republic",  group: "A", owner: "Jake",    odds: "100/1", status: "out" },
     { name: "Czechia",         group: "A", owner: "Grannie", odds: "150/1", status: "out" },
 
     // Group B
@@ -48,7 +48,7 @@ window.SWEEPSTAKE = {
     { name: "Brazil",          group: "C", owner: "Georgie", odds: "8/1",   status: "in" },
     { name: "Morocco",         group: "C", owner: "Jake",    odds: "40/1",  status: "in" },
     { name: "Haiti",           group: "C", owner: "Finn",    odds: "750/1", status: "out" },
-    { name: "Scotland",        group: "C", owner: "Will",    odds: "150/1", status: "in" },
+    { name: "Scotland",        group: "C", owner: "Will",    odds: "150/1", status: "out" },
 
     // Group D
     { name: "United States",   group: "D", owner: "Rosa",    odds: "40/1",  status: "in" },
@@ -71,20 +71,20 @@ window.SWEEPSTAKE = {
     // Group G
     { name: "Belgium",         group: "G", owner: "Grandad", odds: "22/1",  status: "in" },
     { name: "Egypt",           group: "G", owner: "Tanya",   odds: "80/1",  status: "in" },
-    { name: "Iran",            group: "G", owner: "Lisa",    odds: "200/1", status: "in" },
-    { name: "New Zealand",     group: "G", owner: "Rosa",    odds: "500/1", status: "in" },
+    { name: "Iran",            group: "G", owner: "Lisa",    odds: "200/1", status: "out" },
+    { name: "New Zealand",     group: "G", owner: "Rosa",    odds: "500/1", status: "out" },
 
     // Group H
     { name: "Spain",           group: "H", owner: "Tony",    odds: "9/2",   status: "in" },
     { name: "Cabo Verde",      group: "H", owner: "Jake",    odds: "750/1", status: "in" },
-    { name: "Saudi Arabia",    group: "H", owner: "Will",    odds: "250/1", status: "in" },
-    { name: "Uruguay",         group: "H", owner: "Max",     odds: "28/1",  status: "in" },
+    { name: "Saudi Arabia",    group: "H", owner: "Will",    odds: "250/1", status: "out" },
+    { name: "Uruguay",         group: "H", owner: "Max",     odds: "28/1",  status: "out" },
 
     // Group I
     { name: "France",          group: "I", owner: "Evelyn",  odds: "5/1",   status: "in" },
     { name: "Senegal",         group: "I", owner: "Bindy",   odds: "50/1",  status: "in" },
     { name: "Norway",          group: "I", owner: "Isobel",  odds: "66/1",  status: "in" },
-    { name: "Iraq",            group: "I", owner: "Charlie", odds: "500/1", status: "in" },
+    { name: "Iraq",            group: "I", owner: "Charlie", odds: "500/1", status: "out" },
 
     // Group J
     { name: "Argentina",       group: "J", owner: "Gaz",     odds: "11/2",  status: "in" },
@@ -94,7 +94,7 @@ window.SWEEPSTAKE = {
 
     // Group K
     { name: "Portugal",        group: "K", owner: "Isobel",  odds: "8/1",   status: "in" },
-    { name: "Uzbekistan",      group: "K", owner: "Finn",    odds: "500/1", status: "in" },
+    { name: "Uzbekistan",      group: "K", owner: "Finn",    odds: "500/1", status: "out" },
     { name: "Colombia",        group: "K", owner: "Grannie", odds: "40/1",  status: "in" },
     { name: "DR Congo",        group: "K", owner: "J",       odds: "300/1", status: "in" },
 
