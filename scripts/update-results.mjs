@@ -67,32 +67,78 @@ if (!res.ok) {
   process.exit(1);
 }
 
+// Knockout rounds, earliest first. football-data.org uses these stage codes.
+const STAGE_ORDER = ["LAST_32", "LAST_16", "QUARTER_FINALS", "SEMI_FINALS", "THIRD_PLACE", "FINAL"];
+
 const data = await res.json();
 const results = {};
+const knockout = [];
 const unmatched = new Set();
 let finished = 0;
 
 for (const m of data.matches || []) {
-  if (m.status !== "FINISHED") continue;
-  const h = toOurs(m.homeTeam?.name || "");
-  const a = toOurs(m.awayTeam?.name || "");
+  const isFinished = m.status === "FINISHED";
+  const hh = toOurs(m.homeTeam?.name || "");
+  const aa = toOurs(m.awayTeam?.name || "");
   const hg = m.score?.fullTime?.home;
   const ag = m.score?.fullTime?.away;
-  if (!h) unmatched.add(m.homeTeam?.name);
-  if (!a) unmatched.add(m.awayTeam?.name);
-  if (!h || !a || hg == null || ag == null) continue;
-  results[`${h}|${a}`] = { score: `${hg}-${ag}`, played: true };
-  finished++;
+
+  // ---- Score map: every finished, name-matched match (unchanged behaviour) ----
+  if (isFinished) {
+    if (!hh && m.homeTeam?.name) unmatched.add(m.homeTeam?.name);
+    if (!aa && m.awayTeam?.name) unmatched.add(m.awayTeam?.name);
+    if (hh && aa && hg != null && ag != null) {
+      results[`${hh}|${aa}`] = { score: `${hg}-${ag}`, played: true };
+      finished++;
+    }
+  }
+
+  // ---- Knockout bracket: every non-group match, played or not yet ----
+  if (m.stage && m.stage !== "GROUP_STAGE") {
+    // Fall back to the raw API name if it isn't in our list, so it still shows.
+    const h = hh || m.homeTeam?.name || null;
+    const a = aa || m.awayTeam?.name || null;
+    const penH = m.score?.penalties?.home;
+    const penA = m.score?.penalties?.away;
+
+    // Work out who went through (regulation, extra time, or penalties).
+    let winner = null;
+    if (m.score?.winner === "HOME_TEAM") winner = h;
+    else if (m.score?.winner === "AWAY_TEAM") winner = a;
+    if (!winner && penH != null && penA != null) {
+      winner = penH > penA ? h : (penA > penH ? a : null);
+    }
+    if (!winner && isFinished && hg != null && ag != null && hg !== ag) {
+      winner = hg > ag ? h : a;
+    }
+
+    knockout.push({
+      stage: m.stage,
+      date: (m.utcDate || "").slice(0, 10),
+      home: h,
+      away: a,
+      played: isFinished,
+      score: (isFinished && hg != null && ag != null) ? `${hg}-${ag}` : "",
+      pens: (penH != null && penA != null) ? `${penH}-${penA}` : "",
+      winner
+    });
+  }
 }
+
+// Sort the bracket by round, then by kick-off date within the round.
+knockout.sort((x, y) =>
+  ((STAGE_ORDER.indexOf(x.stage) + 1 || 99) - (STAGE_ORDER.indexOf(y.stage) + 1 || 99)) ||
+  String(x.date).localeCompare(String(y.date)));
 
 const out = {
   updated: new Date().toISOString().slice(0, 10),
   source: "football-data.org",
-  results
+  results,
+  knockout
 };
 writeFileSync("results.json", JSON.stringify(out, null, 2) + "\n");
 
-console.log(`Wrote ${finished} finished match(es) to results.json.`);
+console.log(`Wrote ${finished} finished match(es) and ${knockout.length} knockout fixture(s) to results.json.`);
 if (unmatched.size) {
   console.warn("Team names the script could not map (add to ALIASES):", [...unmatched].join(", "));
 }
