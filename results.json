@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28",
+  "updated": "2026-06-29",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -288,6 +288,10 @@
     },
     "Algeria|Austria": {
       "score": "3-3",
+      "played": true
+    },
+    "South Africa|Canada": {
+      "score": "0-1",
       "played": true
     }
   }
