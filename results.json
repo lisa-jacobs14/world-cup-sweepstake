@@ -294,5 +294,327 @@
       "score": "0-1",
       "played": true
     }
-  }
+  },
+  "knockout": [
+    {
+      "stage": "LAST_32",
+      "date": "2026-06-28",
+      "home": "South Africa",
+      "away": "Canada",
+      "played": true,
+      "score": "0-1",
+      "pens": "",
+      "winner": "Canada"
+    },
+    {
+      "stage": "LAST_32",
+      "date": "2026-06-29",
+      "home": "Brazil",
+      "away": "Japan",
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_32",
+      "date": "2026-06-29",
+      "home": "Germany",
+      "away": "Paraguay",
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_32",
+      "date": "2026-06-30",
+      "home": "Netherlands",
+      "away": "Morocco",
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_32",
+      "date": "2026-06-30",
+      "home": "Côte d'Ivoire",
+      "away": "Norway",
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_32",
+      "date": "2026-06-30",
+      "home": "France",
+      "away": "Sweden",
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_32",
+      "date": "2026-07-01",
+      "home": "Mexico",
+      "away": "Ecuador",
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_32",
+      "date": "2026-07-01",
+      "home": "England",
+      "away": "DR Congo",
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_32",
+      "date": "2026-07-01",
+      "home": "Belgium",
+      "away": "Senegal",
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_32",
+      "date": "2026-07-02",
+      "home": "United States",
+      "away": "Bosnia & Herzegovina",
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_32",
+      "date": "2026-07-02",
+      "home": "Spain",
+      "away": "Austria",
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_32",
+      "date": "2026-07-02",
+      "home": "Portugal",
+      "away": "Croatia",
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_32",
+      "date": "2026-07-03",
+      "home": "Switzerland",
+      "away": "Algeria",
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_32",
+      "date": "2026-07-03",
+      "home": "Australia",
+      "away": "Egypt",
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_32",
+      "date": "2026-07-03",
+      "home": "Argentina",
+      "away": "Cabo Verde",
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_32",
+      "date": "2026-07-04",
+      "home": "Colombia",
+      "away": "Ghana",
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_16",
+      "date": "2026-07-04",
+      "home": "Canada",
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_16",
+      "date": "2026-07-04",
+      "home": null,
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_16",
+      "date": "2026-07-05",
+      "home": null,
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_16",
+      "date": "2026-07-06",
+      "home": null,
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_16",
+      "date": "2026-07-06",
+      "home": null,
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_16",
+      "date": "2026-07-07",
+      "home": null,
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_16",
+      "date": "2026-07-07",
+      "home": null,
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "LAST_16",
+      "date": "2026-07-07",
+      "home": null,
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "QUARTER_FINALS",
+      "date": "2026-07-09",
+      "home": null,
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "QUARTER_FINALS",
+      "date": "2026-07-10",
+      "home": null,
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "QUARTER_FINALS",
+      "date": "2026-07-11",
+      "home": null,
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "QUARTER_FINALS",
+      "date": "2026-07-12",
+      "home": null,
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "SEMI_FINALS",
+      "date": "2026-07-14",
+      "home": null,
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "SEMI_FINALS",
+      "date": "2026-07-15",
+      "home": null,
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "THIRD_PLACE",
+      "date": "2026-07-18",
+      "home": null,
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    },
+    {
+      "stage": "FINAL",
+      "date": "2026-07-19",
+      "home": null,
+      "away": null,
+      "played": false,
+      "score": "",
+      "pens": "",
+      "winner": null
+    }
+  ]
 }
