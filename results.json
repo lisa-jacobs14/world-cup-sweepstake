@@ -297,6 +297,10 @@
     "Brazil|Japan": {
       "score": "2-1",
       "played": true
+    },
+    "Germany|Paraguay": {
+      "score": "5-6",
+      "played": true
     }
   },
   "knockout": [
@@ -325,10 +329,10 @@
       "date": "2026-06-29",
       "home": "Germany",
       "away": "Paraguay",
-      "played": false,
-      "score": "",
-      "pens": "",
-      "winner": null
+      "played": true,
+      "score": "5-6",
+      "pens": "5-5",
+      "winner": "Paraguay"
     },
     {
       "stage": "LAST_32",
