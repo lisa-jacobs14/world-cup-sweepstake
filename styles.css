@@ -171,6 +171,33 @@ tr.knocked td { opacity: .55; }
 .standings-table tr.qualify td:first-child { box-shadow: inset 3px 0 0 var(--green); font-weight: 700; }
 .standings-table tr.qualify:hover td { background: #e0f1e6; }
 
+/* ---- Knockout bracket ---- */
+.fixture .team.winner {
+  color: var(--green-d);
+  font-weight: 700;
+}
+.fixture .team.winner::after {
+  content: " ✓";
+  color: var(--green);
+  font-weight: 700;
+}
+.fixture .pens {
+  font-size: .7rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.champion-banner {
+  background: linear-gradient(135deg, #fffaf0, #fbf0c9);
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+  padding: 14px 16px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #b8860b;
+  margin-bottom: 14px;
+}
+.champion-banner span { font-size: .9rem; color: var(--muted); }
+
 /* ---- Scoreboard summary ---- */
 .summary-grid {
   display: grid;
