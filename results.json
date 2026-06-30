@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29",
+  "updated": "2026-06-30",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -299,7 +299,11 @@
       "played": true
     },
     "Germany|Paraguay": {
-      "score": "5-6",
+      "score": "4-5",
+      "played": true
+    },
+    "Netherlands|Morocco": {
+      "score": "3-4",
       "played": true
     }
   },
@@ -330,8 +334,8 @@
       "home": "Germany",
       "away": "Paraguay",
       "played": true,
-      "score": "5-6",
-      "pens": "5-5",
+      "score": "4-5",
+      "pens": "3-4",
       "winner": "Paraguay"
     },
     {
@@ -339,10 +343,10 @@
       "date": "2026-06-30",
       "home": "Netherlands",
       "away": "Morocco",
-      "played": false,
-      "score": "",
-      "pens": "",
-      "winner": null
+      "played": true,
+      "score": "3-4",
+      "pens": "2-3",
+      "winner": "Morocco"
     },
     {
       "stage": "LAST_32",
@@ -468,7 +472,7 @@
       "stage": "LAST_16",
       "date": "2026-07-04",
       "home": "Canada",
-      "away": null,
+      "away": "Morocco",
       "played": false,
       "score": "",
       "pens": "",
@@ -477,7 +481,7 @@
     {
       "stage": "LAST_16",
       "date": "2026-07-04",
-      "home": null,
+      "home": "Paraguay",
       "away": null,
       "played": false,
       "score": "",
@@ -487,7 +491,7 @@
     {
       "stage": "LAST_16",
       "date": "2026-07-05",
-      "home": null,
+      "home": "Brazil",
       "away": null,
       "played": false,
       "score": "",
