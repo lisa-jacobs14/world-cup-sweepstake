@@ -305,6 +305,14 @@
     "Netherlands|Morocco": {
       "score": "3-4",
       "played": true
+    },
+    "Côte d'Ivoire|Norway": {
+      "score": "1-2",
+      "played": true
+    },
+    "France|Sweden": {
+      "score": "3-0",
+      "played": true
     }
   },
   "knockout": [
@@ -353,8 +361,8 @@
       "date": "2026-06-30",
       "home": "Côte d'Ivoire",
       "away": "Norway",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "1-2",
       "pens": "",
       "winner": "Norway"
     },
@@ -363,10 +371,10 @@
       "date": "2026-06-30",
       "home": "France",
       "away": "Sweden",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "3-0",
       "pens": "",
-      "winner": null
+      "winner": "France"
     },
     {
       "stage": "LAST_32",
