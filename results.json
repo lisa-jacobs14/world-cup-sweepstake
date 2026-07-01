@@ -317,6 +317,10 @@
     "Mexico|Ecuador": {
       "score": "2-0",
       "played": true
+    },
+    "England|DR Congo": {
+      "score": "2-1",
+      "played": true
     }
   },
   "knockout": [
@@ -395,10 +399,10 @@
       "date": "2026-07-01",
       "home": "England",
       "away": "DR Congo",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "2-1",
       "pens": "",
-      "winner": null
+      "winner": "England"
     },
     {
       "stage": "LAST_32",
