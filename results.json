@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30",
+  "updated": "2026-07-01",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -313,6 +313,10 @@
     "France|Sweden": {
       "score": "3-0",
       "played": true
+    },
+    "Mexico|Ecuador": {
+      "score": "2-0",
+      "played": true
     }
   },
   "knockout": [
@@ -381,10 +385,10 @@
       "date": "2026-07-01",
       "home": "Mexico",
       "away": "Ecuador",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "2-0",
       "pens": "",
-      "winner": null
+      "winner": "Mexico"
     },
     {
       "stage": "LAST_32",
@@ -490,7 +494,7 @@
       "stage": "LAST_16",
       "date": "2026-07-04",
       "home": "Paraguay",
-      "away": null,
+      "away": "France",
       "played": false,
       "score": "",
       "pens": "",
@@ -500,7 +504,7 @@
       "stage": "LAST_16",
       "date": "2026-07-05",
       "home": "Brazil",
-      "away": null,
+      "away": "Norway",
       "played": false,
       "score": "",
       "pens": "",
