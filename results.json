@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01",
+  "updated": "2026-07-02",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -321,6 +321,10 @@
     "England|DR Congo": {
       "score": "2-1",
       "played": true
+    },
+    "Belgium|Senegal": {
+      "score": "3-2",
+      "played": true
     }
   },
   "knockout": [
@@ -409,10 +413,10 @@
       "date": "2026-07-01",
       "home": "Belgium",
       "away": "Senegal",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "3-2",
       "pens": "",
-      "winner": null
+      "winner": "Belgium"
     },
     {
       "stage": "LAST_32",
