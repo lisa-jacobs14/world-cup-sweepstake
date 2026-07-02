@@ -329,6 +329,10 @@
     "United States|Bosnia & Herzegovina": {
       "score": "2-0",
       "played": true
+    },
+    "Spain|Austria": {
+      "score": "3-0",
+      "played": true
     }
   },
   "knockout": [
@@ -437,10 +441,10 @@
       "date": "2026-07-02",
       "home": "Spain",
       "away": "Austria",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "3-0",
       "pens": "",
-      "winner": null
+      "winner": "Spain"
     },
     {
       "stage": "LAST_32",
