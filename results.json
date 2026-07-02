@@ -325,6 +325,10 @@
     "Belgium|Senegal": {
       "score": "3-2",
       "played": true
+    },
+    "United States|Bosnia & Herzegovina": {
+      "score": "2-0",
+      "played": true
     }
   },
   "knockout": [
@@ -423,10 +427,10 @@
       "date": "2026-07-02",
       "home": "United States",
       "away": "Bosnia & Herzegovina",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "2-0",
       "pens": "",
-      "winner": null
+      "winner": "United States"
     },
     {
       "stage": "LAST_32",
@@ -521,8 +525,8 @@
     {
       "stage": "LAST_16",
       "date": "2026-07-06",
-      "home": null,
-      "away": null,
+      "home": "Mexico",
+      "away": "England",
       "played": false,
       "score": "",
       "pens": "",
@@ -541,8 +545,8 @@
     {
       "stage": "LAST_16",
       "date": "2026-07-07",
-      "home": null,
-      "away": null,
+      "home": "United States",
+      "away": "Belgium",
       "played": false,
       "score": "",
       "pens": "",
