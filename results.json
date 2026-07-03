@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02",
+  "updated": "2026-07-03",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -333,6 +333,14 @@
     "Spain|Austria": {
       "score": "3-0",
       "played": true
+    },
+    "Portugal|Croatia": {
+      "score": "2-1",
+      "played": true
+    },
+    "Switzerland|Algeria": {
+      "score": "2-0",
+      "played": true
     }
   },
   "knockout": [
@@ -451,20 +459,20 @@
       "date": "2026-07-02",
       "home": "Portugal",
       "away": "Croatia",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "2-1",
       "pens": "",
-      "winner": null
+      "winner": "Portugal"
     },
     {
       "stage": "LAST_32",
       "date": "2026-07-03",
       "home": "Switzerland",
       "away": "Algeria",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "2-0",
       "pens": "",
-      "winner": null
+      "winner": "Switzerland"
     },
     {
       "stage": "LAST_32",
