@@ -353,6 +353,10 @@
     "Colombia|Ghana": {
       "score": "1-0",
       "played": true
+    },
+    "Canada|Morocco": {
+      "score": "0-3",
+      "played": true
     }
   },
   "knockout": [
@@ -521,10 +525,10 @@
       "date": "2026-07-04",
       "home": "Canada",
       "away": "Morocco",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "0-3",
       "pens": "",
-      "winner": null
+      "winner": "Morocco"
     },
     {
       "stage": "LAST_16",
