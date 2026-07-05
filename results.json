@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04",
+  "updated": "2026-07-05",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -357,6 +357,10 @@
     "Canada|Morocco": {
       "score": "0-3",
       "played": true
+    },
+    "Paraguay|France": {
+      "score": "0-1",
+      "played": true
     }
   },
   "knockout": [
@@ -535,10 +539,10 @@
       "date": "2026-07-04",
       "home": "Paraguay",
       "away": "France",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "0-1",
       "pens": "",
-      "winner": null
+      "winner": "France"
     },
     {
       "stage": "LAST_16",
@@ -603,8 +607,8 @@
     {
       "stage": "QUARTER_FINALS",
       "date": "2026-07-09",
-      "home": null,
-      "away": null,
+      "home": "France",
+      "away": "Morocco",
       "played": false,
       "score": "",
       "pens": "",
