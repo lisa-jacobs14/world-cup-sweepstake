@@ -361,6 +361,10 @@
     "Paraguay|France": {
       "score": "0-1",
       "played": true
+    },
+    "Brazil|Norway": {
+      "score": "1-2",
+      "played": true
     }
   },
   "knockout": [
@@ -549,10 +553,10 @@
       "date": "2026-07-05",
       "home": "Brazil",
       "away": "Norway",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "1-2",
       "pens": "",
-      "winner": null
+      "winner": "Norway"
     },
     {
       "stage": "LAST_16",
