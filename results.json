@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05",
+  "updated": "2026-07-06",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -365,6 +365,10 @@
     "Brazil|Norway": {
       "score": "1-2",
       "played": true
+    },
+    "Mexico|England": {
+      "score": "2-3",
+      "played": true
     }
   },
   "knockout": [
@@ -563,10 +567,10 @@
       "date": "2026-07-06",
       "home": "Mexico",
       "away": "England",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "2-3",
       "pens": "",
-      "winner": null
+      "winner": "England"
     },
     {
       "stage": "LAST_16",
@@ -631,8 +635,8 @@
     {
       "stage": "QUARTER_FINALS",
       "date": "2026-07-11",
-      "home": null,
-      "away": null,
+      "home": "Norway",
+      "away": "England",
       "played": false,
       "score": "",
       "pens": "",
