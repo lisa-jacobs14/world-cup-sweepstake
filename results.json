@@ -369,6 +369,10 @@
     "Mexico|England": {
       "score": "2-3",
       "played": true
+    },
+    "Portugal|Spain": {
+      "score": "0-1",
+      "played": true
     }
   },
   "knockout": [
@@ -577,10 +581,10 @@
       "date": "2026-07-06",
       "home": "Portugal",
       "away": "Spain",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "0-1",
       "pens": "",
-      "winner": null
+      "winner": "Spain"
     },
     {
       "stage": "LAST_16",
