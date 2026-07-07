@@ -377,6 +377,10 @@
     "United States|Belgium": {
       "score": "1-4",
       "played": true
+    },
+    "Argentina|Egypt": {
+      "score": "3-2",
+      "played": true
     }
   },
   "knockout": [
@@ -605,10 +609,10 @@
       "date": "2026-07-07",
       "home": "Argentina",
       "away": "Egypt",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "3-2",
       "pens": "",
-      "winner": null
+      "winner": "Argentina"
     },
     {
       "stage": "LAST_16",
