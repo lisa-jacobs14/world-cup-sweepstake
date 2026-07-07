@@ -381,6 +381,10 @@
     "Argentina|Egypt": {
       "score": "3-2",
       "played": true
+    },
+    "Switzerland|Colombia": {
+      "score": "4-3",
+      "played": true
     }
   },
   "knockout": [
@@ -619,10 +623,10 @@
       "date": "2026-07-07",
       "home": "Switzerland",
       "away": "Colombia",
-      "played": false,
-      "score": "",
-      "pens": "",
-      "winner": null
+      "played": true,
+      "score": "4-3",
+      "pens": "3-3",
+      "winner": "Switzerland"
     },
     {
       "stage": "QUARTER_FINALS",
