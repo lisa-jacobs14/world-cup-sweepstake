@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06",
+  "updated": "2026-07-07",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -373,6 +373,10 @@
     "Portugal|Spain": {
       "score": "0-1",
       "played": true
+    },
+    "United States|Belgium": {
+      "score": "1-4",
+      "played": true
     }
   },
   "knockout": [
@@ -591,10 +595,10 @@
       "date": "2026-07-07",
       "home": "United States",
       "away": "Belgium",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "1-4",
       "pens": "",
-      "winner": null
+      "winner": "Belgium"
     },
     {
       "stage": "LAST_16",
@@ -629,8 +633,8 @@
     {
       "stage": "QUARTER_FINALS",
       "date": "2026-07-10",
-      "home": null,
-      "away": null,
+      "home": "Spain",
+      "away": "Belgium",
       "played": false,
       "score": "",
       "pens": "",
