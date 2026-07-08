@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07",
+  "updated": "2026-07-08",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -625,7 +625,7 @@
       "away": "Colombia",
       "played": true,
       "score": "4-3",
-      "pens": "3-3",
+      "pens": "4-3",
       "winner": "Switzerland"
     },
     {
@@ -661,8 +661,8 @@
     {
       "stage": "QUARTER_FINALS",
       "date": "2026-07-12",
-      "home": null,
-      "away": null,
+      "home": "Argentina",
+      "away": "Switzerland",
       "played": false,
       "score": "",
       "pens": "",
