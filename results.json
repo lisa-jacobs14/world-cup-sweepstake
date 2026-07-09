@@ -385,6 +385,10 @@
     "Switzerland|Colombia": {
       "score": "4-3",
       "played": true
+    },
+    "France|Morocco": {
+      "score": "2-0",
+      "played": true
     }
   },
   "knockout": [
@@ -633,10 +637,10 @@
       "date": "2026-07-09",
       "home": "France",
       "away": "Morocco",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "2-0",
       "pens": "",
-      "winner": null
+      "winner": "France"
     },
     {
       "stage": "QUARTER_FINALS",
