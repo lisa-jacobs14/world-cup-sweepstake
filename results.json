@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09",
+  "updated": "2026-07-10",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -675,7 +675,7 @@
     {
       "stage": "SEMI_FINALS",
       "date": "2026-07-14",
-      "home": null,
+      "home": "France",
       "away": null,
       "played": false,
       "score": "",
