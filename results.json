@@ -366,10 +366,6 @@
       "score": "1-2",
       "played": true
     },
-    "Mexico|England": {
-      "score": "2-3",
-      "played": true
-    },
     "Portugal|Spain": {
       "score": "0-1",
       "played": true
@@ -591,8 +587,8 @@
       "date": "2026-07-06",
       "home": "Mexico",
       "away": "England",
-      "played": true,
-      "score": "2-3",
+      "played": false,
+      "score": "",
       "pens": "",
       "winner": "England"
     },
