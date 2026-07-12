@@ -366,6 +366,10 @@
       "score": "1-2",
       "played": true
     },
+    "Mexico|England": {
+      "score": "2-3",
+      "played": true
+    },
     "Portugal|Spain": {
       "score": "0-1",
       "played": true
@@ -595,8 +599,8 @@
       "date": "2026-07-06",
       "home": "Mexico",
       "away": "England",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "2-3",
       "pens": "",
       "winner": "England"
     },
@@ -693,8 +697,8 @@
     {
       "stage": "SEMI_FINALS",
       "date": "2026-07-15",
-      "home": null,
-      "away": null,
+      "home": "England",
+      "away": "Argentina",
       "played": false,
       "score": "",
       "pens": "",
