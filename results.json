@@ -393,6 +393,10 @@
     "Norway|England": {
       "score": "1-2",
       "played": true
+    },
+    "Argentina|Switzerland": {
+      "score": "3-1",
+      "played": true
     }
   },
   "knockout": [
@@ -671,10 +675,10 @@
       "date": "2026-07-12",
       "home": "Argentina",
       "away": "Switzerland",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "3-1",
       "pens": "",
-      "winner": null
+      "winner": "Argentina"
     },
     {
       "stage": "SEMI_FINALS",
