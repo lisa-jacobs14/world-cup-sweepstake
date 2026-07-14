@@ -401,6 +401,10 @@
     "Argentina|Switzerland": {
       "score": "3-1",
       "played": true
+    },
+    "France|Spain": {
+      "score": "0-2",
+      "played": true
     }
   },
   "knockout": [
@@ -689,8 +693,8 @@
       "date": "2026-07-14",
       "home": "France",
       "away": "Spain",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "0-2",
       "pens": "",
       "winner": "Spain"
     },
