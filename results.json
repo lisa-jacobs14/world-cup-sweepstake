@@ -405,6 +405,10 @@
     "France|Spain": {
       "score": "0-2",
       "played": true
+    },
+    "England|Argentina": {
+      "score": "1-2",
+      "played": true
     }
   },
   "knockout": [
@@ -703,10 +707,10 @@
       "date": "2026-07-15",
       "home": "England",
       "away": "Argentina",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "1-2",
       "pens": "",
-      "winner": null
+      "winner": "Argentina"
     },
     {
       "stage": "THIRD_PLACE",
