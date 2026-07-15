@@ -711,7 +711,7 @@
     {
       "stage": "THIRD_PLACE",
       "date": "2026-07-18",
-      "home": null,
+      "home": "France",
       "away": null,
       "played": false,
       "score": "",
@@ -721,7 +721,7 @@
     {
       "stage": "FINAL",
       "date": "2026-07-19",
-      "home": null,
+      "home": "Spain",
       "away": null,
       "played": false,
       "score": "",
