@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18",
+  "updated": "2026-07-19",
   "source": "football-data.org",
   "results": {
     "Mexico|South Africa": {
@@ -409,6 +409,10 @@
     "England|Argentina": {
       "score": "1-2",
       "played": true
+    },
+    "France|England": {
+      "score": "4-6",
+      "played": true
     }
   },
   "knockout": [
@@ -717,8 +721,8 @@
       "date": "2026-07-18",
       "home": "France",
       "away": "England",
-      "played": false,
-      "score": "",
+      "played": true,
+      "score": "4-6",
       "pens": "",
       "winner": "England"
     },
